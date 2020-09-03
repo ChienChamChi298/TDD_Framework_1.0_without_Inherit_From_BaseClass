@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false"> 
+
+  
+  <test name="Test"> 
+ 	<listeners>  
+ 	<listener class-name="com.qa.listener.TestListener" />  	
+ 	</listeners>
+    <classes> 
+     <parameter name="platformName" value="Android"/> 
+  	<parameter name="platformVersion" value="11"/>
+  	<parameter name="deviceName" value="ChienChamChi"/> 
+      <class name="com.qa.test.LoginTest"/> 
+      <methods>  
+      <include name="invaildUser" />
+      </methods>
+    </classes>
+  </test> <!-- Test -->    
+</suite> <!-- Suite -->
